@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Football Booking</string>
+    <string name="title_activity_ground_list">GroundList</string>
+
+    <string name="ground_list_card_ground_name">Ground Names</string>
+    <string name="ground_list_card_ground_type">Ground Types</string>
+    <string name="ground_list_card_book">Book</string>
+    <string name="title_activity_ground_detail">GroundDetail</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_booking">Booking</string>
+</resources>
