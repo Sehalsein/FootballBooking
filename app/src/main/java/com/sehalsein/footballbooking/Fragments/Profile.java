@@ -43,7 +43,7 @@ public class Profile extends Fragment {
         recycler.setHasFixedSize(true);
         LinearLayoutManager linearlayout = new LinearLayoutManager(getContext());
         linearlayout.setOrientation(LinearLayoutManager.VERTICAL);
-        ProfileAdapter adapter = new ProfileAdapter(getActivity(),createList());
+        ProfileAdapter adapter = new ProfileAdapter(getActivity(), createList());
         // adapter.setClickListener(this);
         recycler.setAdapter(adapter);
         recycler.setLayoutManager(linearlayout);
@@ -52,11 +52,13 @@ public class Profile extends Fragment {
     private List<ProfileSetting> createList() {
         List<ProfileSetting> list = null;
         try {
-            String Title[] = {"Purchase History", "Settings"};
+            String Title[] = {"Booking History", "Settings", "Terms & Condition"};
+            int Icon[] = {R.drawable.vector_history, R.drawable.vector_settings, R.drawable.vector_contract};
             list = new ArrayList<ProfileSetting>();
             for (int i = 0; i < Title.length; i++) {
                 ProfileSetting profileSetting = new ProfileSetting();
                 profileSetting.setText(Title[i]);
+                profileSetting.setIcon(Icon[i]);
                 list.add(profileSetting);
             }
         } catch (Exception e) {

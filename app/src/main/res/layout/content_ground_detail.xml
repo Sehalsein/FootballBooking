@@ -22,7 +22,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:background="#da0808"
-                android:src="@drawable/ic_profile" />
+                android:src="@drawable/ic_avatar" />
 
             <!--
                         <ImageView
@@ -79,7 +79,7 @@
                         android:layout_marginLeft="20dp"
                         android:layout_marginStart="20dp"
                         android:layout_marginTop="10dp"
-                        android:text="Time" />
+                        android:text="Timing" />
 
                     <TextView
                         android:id="@+id/text_time"
@@ -89,7 +89,7 @@
                         android:layout_marginLeft="150dp"
                         android:layout_marginStart="150dp"
                         android:layout_marginTop="10dp"
-                        android:text="Time" />
+                        android:text="Timing" />
 
 
                 </RelativeLayout>

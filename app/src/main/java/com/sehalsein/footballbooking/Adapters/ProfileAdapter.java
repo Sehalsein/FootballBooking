@@ -53,15 +53,16 @@ public class ProfileAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
             HeaderViewHolder headerViewHolder = (HeaderViewHolder) holder;
 
         } else {
-            ProfileSetting setting = list.get(position-1);
+            ProfileSetting setting = list.get(position - 1);
             SettingsViewHolder settingsViewHolder = (SettingsViewHolder) holder;
             settingsViewHolder.mSettingText.setText("" + setting.getText());
+            settingsViewHolder.mSettingIcon.setImageResource(setting.getIcon());
         }
     }
 
     @Override
     public int getItemCount() {
-        return list.size()+1;
+        return list.size() + 1;
     }
 
     public class SettingsViewHolder extends RecyclerView.ViewHolder {
