@@ -22,9 +22,9 @@
 
 
             <LinearLayout
-                android:background="#ffffff"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -35,22 +35,16 @@
             </LinearLayout>
 
             <TextView
-                android:padding="16dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:padding="16dp"
                 android:text="AVAILABLE TIME" />
 
-            <LinearLayout
-                android:padding="16dp"
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyler_available_time"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#ffffff">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="10:00 am - 11:00 am" />
-            </LinearLayout>
+                tools:listitem="@layout/card_available_time" />
 
             <Button
                 android:id="@+id/button_next"

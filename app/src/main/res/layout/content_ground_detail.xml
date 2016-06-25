@@ -1,12 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".Activity.GroundDetail"
-    tools:showIn="@layout/activity_ground_detail">
+    tools:context="com.sehalsein.footballbooking.Activity.GroundDetail">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -25,19 +21,18 @@
                 android:src="@drawable/ic_avatar" />
 
             <!--
-                        <ImageView
+                      <ImageView
                             android:id="@+id/image_ground_image"
                             android:layout_width="match_parent"
                             android:layout_height="200dp"
                             android:background="#da0808"
                             android:src="@drawable/ic_profile" />
                             -->
-
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="book"
-                android:text="@string/ground_list_card_book" />
+                android:text="BOOK"
+                android:onClick="book"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -49,23 +44,22 @@
                     android:layout_height="wrap_content">
 
                     <TextView
-                        android:id="@+id/textViewType"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
                         android:layout_marginStart="20dp"
                         android:layout_marginTop="10dp"
-                        android:text="Type" />
+                        android:text="@string/type" />
 
                     <TextView
-                        android:id="@+id/textType"
+                        android:id="@+id/text_ground_type"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentTop="true"
                         android:layout_marginLeft="150dp"
                         android:layout_marginStart="150dp"
                         android:layout_marginTop="10dp"
-                        android:text="Type" />
+                        android:text="@string/type" />
 
                 </RelativeLayout>
 
@@ -79,17 +73,17 @@
                         android:layout_marginLeft="20dp"
                         android:layout_marginStart="20dp"
                         android:layout_marginTop="10dp"
-                        android:text="Timing" />
+                        android:text="@string/timing" />
 
                     <TextView
-                        android:id="@+id/text_time"
+                        android:id="@+id/text_timing"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentTop="true"
                         android:layout_marginLeft="150dp"
                         android:layout_marginStart="150dp"
                         android:layout_marginTop="10dp"
-                        android:text="Timing" />
+                        android:text="@string/timing" />
 
 
                 </RelativeLayout>
@@ -104,7 +98,7 @@
                         android:layout_marginLeft="20dp"
                         android:layout_marginStart="20dp"
                         android:layout_marginTop="10dp"
-                        android:text="Minimum Time" />
+                        android:text="@string/minimum_time" />
 
                     <TextView
                         android:id="@+id/text_minimum_time"
@@ -114,7 +108,7 @@
                         android:layout_marginLeft="150dp"
                         android:layout_marginStart="150dp"
                         android:layout_marginTop="10dp"
-                        android:text="Minimum Time" />
+                        android:text="@string/minimum_time" />
 
                 </RelativeLayout>
 
@@ -128,7 +122,7 @@
                         android:layout_marginLeft="20dp"
                         android:layout_marginStart="20dp"
                         android:layout_marginTop="10dp"
-                        android:text="Maximum Time" />
+                        android:text="@string/maximum_time" />
 
                     <TextView
                         android:id="@+id/text_maximum_time"
@@ -138,7 +132,7 @@
                         android:layout_marginLeft="150dp"
                         android:layout_marginStart="150dp"
                         android:layout_marginTop="10dp"
-                        android:text="Maximum Time" />
+                        android:text="@string/maximum_time" />
 
                 </RelativeLayout>
 
@@ -147,23 +141,22 @@
                     android:layout_height="wrap_content">
 
                     <TextView
-                        android:id="@+id/textViewPrice"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
                         android:layout_marginStart="20dp"
                         android:layout_marginTop="10dp"
-                        android:text="Price" />
+                        android:text="@string/price_per_hour" />
 
                     <TextView
-                        android:id="@+id/textPrice"
+                        android:id="@+id/text_price"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentTop="true"
                         android:layout_marginLeft="150dp"
                         android:layout_marginStart="150dp"
                         android:layout_marginTop="10dp"
-                        android:text="Price" />
+                        android:text="@string/price_per_hour" />
 
                 </RelativeLayout>
 
@@ -178,17 +171,17 @@
                         android:layout_marginLeft="20dp"
                         android:layout_marginStart="20dp"
                         android:layout_marginTop="10dp"
-                        android:text="Manager" />
+                        android:text="@string/manager" />
 
                     <TextView
-                        android:id="@+id/textManager"
+                        android:id="@+id/text_manager"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentTop="true"
                         android:layout_marginLeft="150dp"
                         android:layout_marginStart="150dp"
                         android:layout_marginTop="10dp"
-                        android:text="Manager" />
+                        android:text="@string/manager" />
 
 
                 </RelativeLayout>
@@ -198,24 +191,22 @@
                     android:layout_height="wrap_content">
 
                     <TextView
-                        android:id="@+id/textViewContact"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
                         android:layout_marginStart="20dp"
                         android:layout_marginTop="10dp"
-                        android:text="Contact" />
+                        android:text="@string/phone_number" />
 
                     <TextView
-                        android:id="@+id/textContact"
+                        android:id="@+id/text_phone_number"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentTop="true"
                         android:layout_marginLeft="150dp"
                         android:layout_marginStart="150dp"
                         android:layout_marginTop="10dp"
-
-                        android:text="Contact" />
+                        android:text="@string/phone_number" />
 
 
                 </RelativeLayout>
@@ -225,23 +216,167 @@
                     android:layout_height="wrap_content">
 
                     <TextView
-                        android:id="@+id/textViewAddress"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
                         android:layout_marginStart="20dp"
                         android:layout_marginTop="10dp"
-                        android:text="Address" />
+                        android:text="@string/address" />
 
                     <TextView
-                        android:id="@+id/textAddress"
+                        android:id="@+id/text_address"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentTop="true"
                         android:layout_marginLeft="150dp"
                         android:layout_marginStart="150dp"
                         android:layout_marginTop="10dp"
-                        android:text="Address" />
+                        android:text="@string/address" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Amenities" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="150dp"
+                        android:layout_marginStart="150dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/image_washroom"
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:layout_gravity="center_vertical" />
+
+                            <TextView
+                                android:id="@+id/text_washroom"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="10dp"
+                                android:text="@string/washroom" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/image_equipment_rental"
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:layout_gravity="center_vertical" />
+
+                            <TextView
+                                android:id="@+id/text_equipment_rental"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="10dp"
+                                android:text="@string/equipment_rental" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/image_sitting_area"
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:layout_gravity="center_vertical" />
+
+                            <TextView
+                                android:id="@+id/text_sitting_area"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="10dp"
+                                android:text="@string/sitting_area" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/image_parking"
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:layout_gravity="center_vertical" />
+
+                            <TextView
+                                android:id="@+id/text_parking"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="10dp"
+                                android:text="@string/parking" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/image_changing_room"
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:layout_gravity="center_vertical" />
+
+                            <TextView
+                                android:id="@+id/text_changing_room"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="10dp"
+                                android:text="@string/changing_room" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/image_drinking_water"
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:layout_gravity="center_vertical" />
+
+                            <TextView
+                                android:id="@+id/text_drinking_water"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="10dp"
+                                android:text="@string/drinking_water" />
+                        </LinearLayout>
+
+                    </LinearLayout>
 
                 </RelativeLayout>
 
